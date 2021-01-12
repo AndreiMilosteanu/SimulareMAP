@@ -1,0 +1,1 @@
+Game{Name='Outlast', BenPunkteAnzahl=9.1, MetacritikPunkteAnzahk=78, datum=2013-08-15}

@@ -1,0 +1,1 @@
+Game{Name='Dutlast', BenPunkteAnzahl=7.5, MetacritikPunkteAnzahk=78, datum=2015-08-15}

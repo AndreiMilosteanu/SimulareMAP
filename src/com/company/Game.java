@@ -14,8 +14,9 @@ public class Game {
         Name = name;
         BenPunkteAnzahl = benPunkteAnzahl;
         MetacritikPunkteAnzahk = metacritikPunkteAnzahk;
-        this.datum = datum;
         datum.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM));
+        this.datum = datum;
+
     }
 
     public String getName() {
@@ -57,6 +58,6 @@ public class Game {
                 ", BenPunkteAnzahl=" + BenPunkteAnzahl +
                 ", MetacritikPunkteAnzahk=" + MetacritikPunkteAnzahk +
                 ", datum=" + datum +
-                '}';
+                '}'+'\n';
     }
 }
