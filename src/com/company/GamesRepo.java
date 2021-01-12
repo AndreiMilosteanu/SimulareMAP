@@ -21,9 +21,9 @@ public class GamesRepo {
             Scanner myReader = new Scanner(myObj);
             while (myReader.hasNextLine()) {
                 String data = myReader.nextLine();
-                String[] entries = data.split("/*");
-                System.out.println(data);
-                Game g = new Game(entries[0],Integer.parseInt(entries[1]),Integer.parseInt(entries[2]), LocalDate.parse(entries[3]));
+                String[] entries = data.split("\\*");
+                System.out.println(entries[0]);
+                Game g = new Game(entries[0],Integer.parseInt(entries[1]),Float.parseFloat(entries[2]), LocalDate.parse(entries[3]));
                 gameList.add(g);
             }
             myReader.close();

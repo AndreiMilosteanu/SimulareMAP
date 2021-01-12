@@ -1,18 +1,21 @@
 package com.company;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
 
 public class Game {
     private String Name;
-    private int BenPunkteAnzahl;
+    private float BenPunkteAnzahl;
     private int MetacritikPunkteAnzahk;
     private LocalDate datum;
 
-    public Game(String name, int benPunkteAnzahl, int metacritikPunkteAnzahk, LocalDate datum) {
+    public Game(String name, int metacritikPunkteAnzahk, float benPunkteAnzahl, LocalDate datum) {
         Name = name;
         BenPunkteAnzahl = benPunkteAnzahl;
         MetacritikPunkteAnzahk = metacritikPunkteAnzahk;
         this.datum = datum;
+        datum.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM));
     }
 
     public String getName() {
@@ -23,7 +26,7 @@ public class Game {
         Name = name;
     }
 
-    public int getBenPunkteAnzahl() {
+    public float getBenPunkteAnzahl() {
         return BenPunkteAnzahl;
     }
 
